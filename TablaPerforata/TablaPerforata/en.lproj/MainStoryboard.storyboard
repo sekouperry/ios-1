@@ -182,21 +182,29 @@
                                 <color key="textColor" red="0.20392158630000001" green="0.71372550729999995" blue="0.92941182850000004" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NjU-xd-g2A">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="314" id="0c3-Wd-oXd"/>
+                                    <constraint firstAttribute="height" constant="226" id="5u6-IC-R1q"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="zYc-15-WW5" firstAttribute="leading" secondItem="tXc-j4-7uF" secondAttribute="leading" type="default" id="2B0-LV-Hlt"/>
-                            <constraint firstItem="Y7y-dI-2nV" firstAttribute="centerY" secondItem="w76-Jb-z4a" secondAttribute="centerY" type="default" id="6yu-DC-wDF"/>
                             <constraint firstItem="2zK-h3-NMX" firstAttribute="top" secondItem="zYc-15-WW5" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="8iB-ed-8g1"/>
                             <constraint firstItem="0jn-Dv-PPA" firstAttribute="leading" secondItem="2zK-h3-NMX" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="9cr-xt-nBr"/>
                             <constraint firstItem="zuI-TL-mPT" firstAttribute="top" secondItem="SZs-61-tde" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="9nI-7S-e87"/>
+                            <constraint firstItem="Y7y-dI-2nV" firstAttribute="centerY" secondItem="w76-Jb-z4a" secondAttribute="centerY" type="default" id="BEc-sH-Vkn"/>
                             <constraint firstItem="2zK-h3-NMX" firstAttribute="trailing" secondItem="tXc-j4-7uF" secondAttribute="trailing" type="default" id="Ceo-zG-vhb"/>
                             <constraint firstItem="eEC-qx-B8O" firstAttribute="baseline" secondItem="Y7y-dI-2nV" secondAttribute="baseline" type="default" id="Dme-FC-3Es"/>
                             <constraint firstItem="6sw-rp-oWu" firstAttribute="trailing" secondItem="je5-jJ-DJk" secondAttribute="trailing" type="default" id="Hmz-iz-fw0"/>
                             <constraint firstItem="SZs-61-tde" firstAttribute="leading" secondItem="zuI-TL-mPT" secondAttribute="leading" type="default" id="Lq1-xR-VPE"/>
+                            <constraint firstItem="NjU-xd-g2A" firstAttribute="centerX" secondItem="w76-Jb-z4a" secondAttribute="centerX" type="default" id="PoX-Gb-hFT"/>
                             <constraint firstItem="eEC-qx-B8O" firstAttribute="leading" secondItem="SZs-61-tde" secondAttribute="leading" type="default" id="Svj-Kl-Ehm"/>
                             <constraint firstItem="zuI-TL-mPT" firstAttribute="baseline" secondItem="tXc-j4-7uF" secondAttribute="baseline" type="default" id="TNo-eJ-jhB"/>
                             <constraint firstItem="2zK-h3-NMX" firstAttribute="leading" secondItem="w76-Jb-z4a" secondAttribute="leading" constant="40" id="VND-NL-4JO"/>
+                            <constraint firstItem="Y7y-dI-2nV" firstAttribute="top" secondItem="NjU-xd-g2A" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Vbh-Qh-rjA"/>
                             <constraint firstItem="zYc-15-WW5" firstAttribute="leading" secondItem="vlB-aa-PAE" secondAttribute="leading" type="default" id="el9-Sq-mPp"/>
                             <constraint firstItem="vlB-aa-PAE" firstAttribute="top" secondItem="2zK-h3-NMX" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="ivL-ZR-pFp"/>
                             <constraint firstItem="nrA-J6-34K" firstAttribute="top" secondItem="0jn-Dv-PPA" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="jb5-sJ-7tc"/>
@@ -213,6 +221,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="rg7-vj-npV"/>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="firstImage" destination="NjU-xd-g2A" id="73K-J1-1VG"/>
+                        <outlet property="view" destination="w76-Jb-z4a" id="rW4-1n-hQk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bwl-xL-7JG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -496,6 +508,9 @@
         </class>
         <class className="QWProductViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/QWProductViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="firstImage" candidateClass="UIImageView"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
